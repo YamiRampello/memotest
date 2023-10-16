@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memotest</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <h1>Memotest</h1>
+    <style type="text/css">
+      body,
+      html {
+        height: 100%;
+      }
+
+      .columna-juego {
+        border: 1px solid black;
+      }
+
+      .fila-juego {
+        height: 20vh;
+      }
+
+      .cuadro {
+        opacity: 0;
+        transition: opacity ease 0.2s;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .rojo {
+        background-color: red;
+      }
+
+      .verde {
+        background-color: green;
+      }
+
+      .amarillo {
+        background-color: yellow;
+      }
+
+      .negro {
+        background-color: black;
+      }
+
+      .rosa {
+        background-color: pink;
+      }
+
+      .azul {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tablero">
+      <div class="container-fluid h-100">
+        <div class="row fila-marco">
+          <div class="alert alert-success" role="alert" id="estado">
+            Turno del jugador
+          </div>
+          <div class="col columna-marco" id="puntos">Puntos</div>
+          <div class="col columna-marco" id="intentos">Intentos</div>
+          <div class="col columna-marco"></div>
+        </div>
+        <div class="row fila-juego">
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+        </div>
+        <div class="row fila-juego">
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+        </div>
+        <div class="row fila-juego">
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+        </div>
+        <div class="row fila-juego">
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+          <div class="col columna-juego">
+            <div class="cuadro h-100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
